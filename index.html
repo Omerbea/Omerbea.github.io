@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Façade Crew — a cozy one-tap building game</title>
+<meta name="description" content="Stack the scaffolding one tap at a time, fix the town and climb to the roof. A cozy pixel-art game for Android.">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root { --ink:#141624; --night:#1e2540; --sky:#48548c; --amber:#ffd278; --paper:#f0f2f8; --quiet:#b8c0dc; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--sky); }
+  body { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--paper);
+         background: linear-gradient(180deg, var(--night), var(--sky) 900px, var(--sky)); min-height: 100vh; line-height: 1.6; }
+  img { image-rendering: pixelated; display: block; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 48px; }
+  .banner { width: 100%; height: auto; border: 6px solid var(--ink); box-shadow: 8px 8px 0 #0006; }
+  h1 { font-size: 2rem; letter-spacing: .5px; margin: 28px 0 6px; color: var(--amber); }
+  .lead { font-size: 1.15rem; color: var(--quiet); max-width: 640px; }
+  .cta { display: inline-block; margin: 22px 0 8px; padding: 14px 22px; background: var(--amber); color: var(--ink);
+         font-weight: 800; text-decoration: none; border: 4px solid var(--ink); box-shadow: 0 6px 0 var(--ink); }
+  .cta.soon { opacity: .75; pointer-events: none; }
+  .note { font-size: .9rem; color: var(--quiet); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin: 32px 0; }
+  .shots img { width: 100%; height: auto; border: 4px solid var(--ink); box-shadow: 5px 5px 0 #0006; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 8px 0 32px; }
+  .features div { background: #14162499; border: 3px solid var(--ink); padding: 14px 16px; }
+  .features b { color: var(--amber); }
+  footer { border-top: 3px solid #14162466; margin-top: 24px; padding-top: 16px; font-size: .9rem; color: var(--quiet); }
+  footer a { color: var(--paper); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="banner" src="img/banner.jpg" alt="Façade Crew: a pixel-art builder on scaffolding against a night sky" width="1024" height="500">
+  <h1>Build it up. Fix it up. Don't let it wobble!</h1>
+  <p class="lead">Façade Crew is a cozy one-tap building game. Scaffold the front of each building to the roof, fix the town on the way up, and keep it all from coming down.</p>
+  <!-- Replace with the Google Play link when the game is live:
+       https://play.google.com/store/apps/details?id=com.omerbea.facadecrew -->
+  <a class="cta soon" href="#">Coming soon to Google Play</a>
+  <p class="note">Free to play. Android first, iPhone later.</p>
+
+  <div class="shots">
+    <img src="img/title.jpg" alt="Title screen with the crew's lorry" width="360" height="640" loading="lazy">
+    <img src="img/streak.jpg" alt="A glass tower with a Perfect streak" width="360" height="640" loading="lazy">
+    <img src="img/parachute.jpg" alt="The scaffold collapsing as the builder parachutes down" width="360" height="640" loading="lazy">
+    <img src="img/shop.jpg" alt="The coin shop with upgrades and hard hats" width="360" height="640" loading="lazy">
+  </div>
+
+  <div class="features">
+    <div><b>One tap at a time.</b> Put up the poles, then drop each board level as it slides or swings past.</div>
+    <div><b>Fix the town.</b> Leaks, broken windows, peeling paint and the odd stuck cat.</div>
+    <div><b>30 jobs.</b> From a little cottage to a 30-floor skyscraper, with 3 stars to earn on each.</div>
+    <div><b>Gets harder as you get better.</b> Rank up from Rookie to Master crew.</div>
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a> · <a href="mailto:omer@silome.xyz">omer@silome.xyz</a></p>
+    <p>© 2026 Facade Crew. Façade Crew is made by an independent developer in the UK.</p>
+  </footer>
+</div>
+</body>
+</html>
